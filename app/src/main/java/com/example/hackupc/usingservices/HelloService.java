@@ -91,7 +91,7 @@ public class HelloService extends Service implements AccelerometerListener{
         AccelerometerManager.stopListening();
 
         mp.stop();
-        detect = 0;
+        detect =  delay = 0;
     }
 
     @Override
