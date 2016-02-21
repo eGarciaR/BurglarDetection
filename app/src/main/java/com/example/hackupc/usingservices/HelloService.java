@@ -119,10 +119,10 @@ public class HelloService extends Service implements AccelerometerListener{
             ++detect;
             delay = 0;
         }
-        if (detect >= 20) {
+        if (detect >= 15) {
             mp.start();
         }
-        if (delay >= 200) detect = delay = 0;
+        if (delay >= 100) detect = delay = 0;
     }
 
 

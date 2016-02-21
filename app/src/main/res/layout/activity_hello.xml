@@ -35,7 +35,8 @@
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:text="@string/start_service" />
+        android:text="@string/start_service"
+        android:background="#6bf20a" />
 
     <Button
         android:id="@+id/stop_Service"
@@ -44,5 +45,6 @@
         android:layout_below="@+id/start_service"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:text="@string/stop_service" />
+        android:text="@string/stop_service"
+        android:background="#f60606" />
 </RelativeLayout>
