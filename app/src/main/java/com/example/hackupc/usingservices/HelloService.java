@@ -31,7 +31,7 @@ public class HelloService extends Service implements AccelerometerListener{
 
         isRunning = true;
 
-        Toast.makeText(getBaseContext(), "Accelerometer Started",
+        Toast.makeText(getBaseContext(), "Service started, listening...",
                 Toast.LENGTH_SHORT).show();
 
         //Check device supported Accelerometer senssor or not
@@ -92,6 +92,8 @@ public class HelloService extends Service implements AccelerometerListener{
 
         mp.stop();
         detect =  delay = 0;
+        Toast.makeText(getBaseContext(), "Service stoped!",
+                Toast.LENGTH_SHORT).show();
     }
 
     @Override
@@ -119,7 +121,7 @@ public class HelloService extends Service implements AccelerometerListener{
             ++detect;
             delay = 0;
         }
-        if (detect >= 15) {
+        if (detect >= 10) {
             mp.start();
         }
         if (delay >= 100) detect = delay = 0;
